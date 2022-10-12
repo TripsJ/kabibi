@@ -6,31 +6,101 @@
 	  <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
-  <body>
-    
+  <body> 
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="section-nav">
+        <h1>Kababi</h1>
+        <img class="header__logo" src="./resources/images/logo.png" alt="">
+        <ul class="section-nav__main-nav">
+          <li><a href="#" class="main-nav--active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="./resources/images/icon-menu.svg" class="menu-hamburger">
+        <div class="section-nav__phone-number">
+          <img src="./resources/images/icon-telephone.svg">
+          <p>+012(345)6789</p>
+        </div>
+        <div class="section-nav__btn-book-table">
+          <a href="#">Book a table</a>
+          <img class="little-arrow" src="./resources/images/icon-arrow.svg">
+        </div>
+      </nav>
+      <div class="header__content">
+        <img src="./resources/images/img_bg2.png">
+        <p>Best<br> quality<br> foods</p>
+        <div class="btn-explore-menu">
+          <a href="#">Explore our menu</a>
+          <img class="little-arrow" src="./resources/images/icon-arrow.svg">
+        </div>
+        <div class="play-btn"></div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+
+    </main>
+    <!-- FOOTER  -->
     <footer class="footer">
-      <img src="./resources/images/logo2@2x.png" alt="The logo of Kababi">
-      <h3>About</h3>
-      <ul class="footer__about">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">The Setting</a></li>
-        <li><a href="#">The Suites</a></li>
-        <li><a href="#">Food Lists</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">The Fontus Spa</a></li>
-        <li><a href="#">Experiences</a></li>
-        <li><a href="#">Private Functions</a></li>
-        <li><a href="#">Gallery, Events</a></li>
-        <li><a href="#">Special Offers</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">56 Main Street, D-Block, 2nd Floor,</a></li>
-        <li><a href="#">support@gmail.com</a></li>
-        <li><a href="#">+012 (345) 67 899</a></li>
-        <li><a href="#">08 am - 06 pm</a></li>
-      </ul>
+      <img src="./resources/images/logo2@2x.png" alt="The logo of Kababi" class="footer__kababi-logo">
+      <div class="footer__link-section">
+        <div class="footer__link-section__box">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">The Setting</a></li>
+            <li><a href="#">The Suites</a></li>
+            <li><a href="#">Food Lists</a></li>
+          </ul>
+        </div>
+        <div class="footer__link-section__box">
+          <h3>Facilities</h3>
+          <ul>
+            <li><a href="#">The Fontus Spa</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Private Functions</a></li>
+            <li><a href="#">Gallery, Events</a></li>
+            <li><a href="#">Special Offers</a></li>
+          </ul>
+        </div>
+        <div class="footer__link-section__box footer__link-section__box--newsletters">
+          <h3>Newletters</h3>
+          <p>Dolor sit amet consectetur adipliscing elit sed do eiusmod tempor incidunt labore et dolore</p>
+          <form action="post">
+            <label for="user_mail">Your email</label>
+            <input type="email" id="user_mail" placeholder="Enter Email Address">
+            <button type="submit"><img src="./resources/images/icon-arrow.svg"></button>
+          </form>
+        </div>
+        <div class="footer__link-section__box">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#"><img src="./resources/images/icon-map.svg"> 56 Main Street, D-Block, 2nd Floor,</a></li>
+            <li><a href="#"><img src="./resources/images/icon-mail.svg"> support@gmail.com</a></li>
+            <li><a href="#"><img src="./resources/images/icon-telephone.svg"> +012 (345) 67 899</a></li>
+            <li><a href="#"><img src="./resources/images/icon-clock.svg"> 08 am - 06 pm</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+      <img class="particular" src="./resources/images/iconup@2x.png">
+
+      <div class="footer__footer">
+        <p>
+          Copyright © 2021 The Kabibi - Restaurant HTML Template. Designed by <b>Themesflat</b>
+        </p>
+        <ul class="footer__footer__social-media">
+          <li><a href="#"><img src="./resources/images/icon-facebook.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-twitter.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-youtube.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-linkedin.svg"></a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
