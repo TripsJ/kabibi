@@ -11,7 +11,7 @@
     <header class="header">
       <nav class="section-nav">
         <h1>Kababi</h1>
-        <img class="header__logo" src="./resources/images/logo.png" alt="">
+        <img class="header__logo" src="./resources/images/logo.png">
         <ul class="section-nav__main-nav">
           <li><a href="#" class="main-nav--active">Home</a></li>
           <li><a href="#">About</a></li>
@@ -30,7 +30,7 @@
         </div>
       </nav>
       <div class="header__content">
-        <img src="./resources/images/img_bg2.png">
+        <img src="./resources/images/img_bg2.png" class="header__content__img">
         <p>Best<br> quality<br> foods</p>
         <div class="btn-explore-menu">
           <a href="#">Explore our menu</a>
@@ -38,9 +38,28 @@
         </div>
         <div class="play-btn"></div>
       </div>
+      <div class="play-btn">
+        <img src="./resources/images/icon-play.svg" class="play-btn-img">
+      </div>
     </header>
     <!-- MAIN -->
     <main>
+      
+      <!-- OUR CHEF -->
+      <section class="our-chef">
+        <h2>Our chef</h2>
+        <div class="our-chef__header">
+          <h3>Meet professional chefs</h3>
+          <p>Best foods for you & family</p>
+        </div>
+        <div class="our-chef__content">
+          <img src="./resources/images/our-chef1.jpg" alt="A chef is smilling to the camera.">
+          <img src="./resources/images/our-chef2.jpg" alt="A chef is not looking at the camera.">
+          <img src="./resources/images/our-chef3.jpg" alt="A chef is smilling at the camera with a knife.">
+          <img src="./resources/images/our-chef4.jpg" alt="A chef is holding a pan and a spoon.">
+        </div>
+      </section>
+      <!-- OUR BLOG -->
 
     </main>
     <!-- FOOTER  -->
@@ -102,5 +121,13 @@
         </ul>
       </div>
     </footer>
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".section-nav__main-nav")
+
+      menuHamburger.addEventListener('click',()=>{
+      navLinks.classList.toggle('mobile-menu')
+      })
+    </script>
   </body>
 </html>

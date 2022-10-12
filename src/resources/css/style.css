@@ -1,5 +1,6 @@
 body {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -81,7 +82,12 @@ header img {
 }
 
 .menu-hamburger {
-  width: 40px;
+  z-index: 3;
+  display: none;
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 .header__content {
@@ -93,6 +99,13 @@ header img {
   line-height: 9rem;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
+}
+
+.header__content__img {
+  position: absolute;
+  width: 150px;
+  left: 500px;
+  top: 150px;
 }
 
 .btn-explore-menu {
@@ -115,29 +128,86 @@ header img {
   right: 50px;
 }
 
+.play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 500px;
+  right: 80px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ffffff;
+  border-radius: 1000px;
+}
+.play-btn .play-btn-img {
+  width: 100px;
+}
+
 @media (max-width: 1460px) {
   .section-nav .section-nav__phone-number {
     margin-left: 10%;
   }
+  .header__content__img {
+    width: 130px;
+    left: 450px;
+    top: 130px;
+  }
 }
 @media (max-width: 1150px) {
-  .section-nav .section-nav__phone-number {
-    margin-left: 30%;
-  }
   .header__content p {
     font-size: 7rem;
     line-height: 7rem;
   }
+  .section-nav .section-nav__phone-number {
+    margin-left: 0;
+  }
+  .section-nav__btn-book-table {
+    position: absolute;
+    top: 580px;
+    left: 130px;
+  }
+  .section-nav__phone-number {
+    position: absolute;
+    top: 640px;
+    left: 145px;
+  }
 }
 @media (max-width: 700px) {
+  .header__content__img {
+    width: 100px;
+    left: 300px;
+    top: 100px;
+  }
+  .header__logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
   .section-nav {
     flex-direction: column;
+    padding: 0;
   }
   .section-nav .section-nav__phone-number {
     margin-left: 0;
   }
   .section-nav__main-nav {
-    display: none;
+    z-index: 2;
+    position: absolute;
+    right: -250px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b191a;
+    width: 250px;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-nav__main-nav li {
+    margin: 15px;
+  }
+  .section-nav__main-nav li:nth-child(1) {
+    margin-top: 60px;
   }
   .header__content {
     margin-left: 50px;
@@ -147,7 +217,84 @@ header img {
     font-size: 5rem;
     line-height: 6rem;
   }
+  .menu-hamburger {
+    display: block;
+  }
+  .section-nav__btn-book-table {
+    position: absolute;
+    top: 500px;
+    left: 30px;
+  }
+  .section-nav__phone-number {
+    position: absolute;
+    top: 560px;
+    left: 45px;
+  }
+  .play-btn {
+    top: 430px;
+    right: 50px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ffffff;
+    border-radius: 1000px;
+  }
+  .play-btn .play-btn-img {
+    width: 80px;
+  }
 }
+.mobile-menu {
+  position: absolute;
+  right: 0;
+}
+
+/* OUR CHEF */
+.our-chef {
+  background: radial-gradient(#393738, #1b191a);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  padding-bottom: 100px;
+}
+.our-chef h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 11rem;
+  opacity: 5%;
+  text-transform: uppercase;
+  position: relative;
+  width: 6em;
+  font-weight: 100;
+  font-size: 1000%;
+  line-height: 1.5;
+  width: 6em;
+  opacity: 0.1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.our-chef__header {
+  text-align: center;
+}
+.our-chef__header h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: -130px;
+  margin-bottom: 30px;
+}
+
+.our-chef__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.our-chef__content img {
+  width: 250px;
+  margin: 15px 15px;
+}
+
 /* FOOTER */
 footer {
   background: #1b191a;
