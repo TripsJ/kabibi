@@ -5,15 +5,193 @@
     <title>My Website</title>
 	  <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/"
   </head>
-  <body>
+  <body> 
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="section-nav">
+        <h1>Kababi</h1>
+        <img class="header__logo" src="./resources/images/logo.png" alt="">
+        <ul class="section-nav__main-nav">
+          <li><a href="#" class="main-nav--active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="./resources/images/icon-menu.svg" class="menu-hamburger">
+        <div class="section-nav__phone-number">
+          <img src="./resources/images/icon-telephone.svg">
+          <p>+012(345)6789</p>
+        </div>
+        <div class="section-nav__btn-book-table">
+          <a href="#">Book a table</a>
+          <img class="little-arrow" src="./resources/images/icon-arrow.svg">
+        </div>
+      </nav>
+      <div class="header__content">
+        <img src="./resources/images/img_bg2.png">
+        <p>Best<br> quality<br> foods</p>
+        <div class="btn-explore-menu">
+          <a href="#">Explore our menu</a>
+          <img class="little-arrow" src="./resources/images/icon-arrow.svg">
+        </div>
+        <div class="play-btn"></div>
+      </div>
+    </header>
+    <!-- MAIN -->
     <main>
-     <header class="head">
-      <nav class="navigation"></nav>
-     </header>
-     <footer class="footer">
-    <img src="" alt="The logo of Kababi">
-  </footer>
+      <!-- CATEGORY -->
+        <section id="category">
+          <h2>Category</h2>
+          <h3>Choose your best category</h3>
+          <p>Best foods for you & family</p>
+          <!-- Add background gallery picture -->
+            <ul>
+              <li><img alt="Cheeseburger icon" src="../src/resources/images/icon-cheeseburger.png">Cheeseburger<br /><img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></li>
+              <li><img alt="Pizza icon" src="../src/resources/images/icon-pizza.png">Pizza Slice<br/><img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></li>
+              <li><img alt="Coffee cup icon" src="../src/resources/images/icon-coffee.png">Coffee-Cup<br /><img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></li>
+              <li><img alt="Chicken drumstick icon" src="../src/resources/images/icon-chicken.png">Chicken-Leg<br /><img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></li>
+              <li><img alt="Drink with fruits icon" src="../src/resources/images/icon-drink.png">Energy Drink<br /><img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></li>
+              <li><img alt="Schrimp icon" src="../src/resources/images/icon-shrimp.png">Shrimp <br /><img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></li>
+            </ul>
+        </section>
+        <!-- ABOUT US -->
+        <section id="about_us">
+            <img alt="Crepes plate" src="../src/resources/images/img-crepes.png">
+            <img alt="Salad bowl" src="../src/resources/images/img-salad.jpeg">
+            <img alt="Five eggs on a cloath" src="../src/resources/images/img-eggs.png">
+            <div class="about_us_textzone">
+              <h2>About us</h2>
+              <h3>Why choose us</h3>
+              <p>Best foods for you & family</p>
+              <div class="about_us_description">
+                <img alt="Label written 'Best quality foods'" src="../src/resources/images/icon-about_us.png">
+                <img alt="Employee serving a plate" src="../src/resources/images/img-about_us.jpeg">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque laudantium totam apeam eaque ipsa quae abillo invtore verittis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas</p>
+                <a rel="Description about restaurant" href="#"><button>Discover More<img alt="arrow to the right" src="../src/resources/images/icon-arrow-right.svg"></button></a>
+              </div>
+              
+            </div>
+        </section>
+        <!-- SPECIAL OFFERS -->
+        <section id="special_offers">
+          <h2>Our menu</h2>
+          <h3>Try our special offer</h3>
+          <p>Best goods for you & family</p>
+          <dl class="special_food"></dl>
+            <!-- Add class for each div -->
+            <div>
+              <dt>Raw Scallops From Erquy</dt>
+              <dd>Candied Jerusalem artichokes, truffle</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div>
+              <dt>Celeriac and Truffle Ravioli</dt>
+              <dd>Roasted langoustine, consommé</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+
+            <div>
+              <dt>Cod Filet Cooked on One Side</dt>
+              <dd>Chorizo, chickpea espuma, pequillos</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+
+            <div>
+              <dt>Sea Bass Ceviche</dt>
+              <dd>Avocado, butternut, lime</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div>
+              <dt>Corrèze Pan-seared Veal Liver</dt>
+              <dd>Olive oil mashed potato, onion jus</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+    
+            <div>
+              <dt>Grilled Veal Filet Mignon</dt>
+              <dd>Pumpkin, endives with hazelnuts</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div>
+              <dt>Tender Octopus and Fennel</dt>
+              <dd>Citrus, wild rocket condiment</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+            
+            <div>
+              <dt>Viennese Veal Cutlet</dt>
+              <dd>Ricotta and spinach gnocchi, Caccio de Pepe</dd>
+              <p class="dollar-value">$89</p>
+            </div>
+          <dl class="special_food"></dl>
+          <img alt="all grains bread"src="../src/resources/images/img-our-menu_bread.jpeg">
+          <img alt="raw rib steak" src="../src/resources/images/img-our-menu_meat.jpeg">
+        </section>
     </main>
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <img src="./resources/images/logo2@2x.png" alt="The logo of Kababi" class="footer__kababi-logo">
+      <div class="footer__link-section">
+        <div class="footer__link-section__box">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">The Setting</a></li>
+            <li><a href="#">The Suites</a></li>
+            <li><a href="#">Food Lists</a></li>
+          </ul>
+        </div>
+        <div class="footer__link-section__box">
+          <h3>Facilities</h3>
+          <ul>
+            <li><a href="#">The Fontus Spa</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Private Functions</a></li>
+            <li><a href="#">Gallery, Events</a></li>
+            <li><a href="#">Special Offers</a></li>
+          </ul>
+        </div>
+        <div class="footer__link-section__box footer__link-section__box--newsletters">
+          <h3>Newletters</h3>
+          <p>Dolor sit amet consectetur adipliscing elit sed do eiusmod tempor incidunt labore et dolore</p>
+          <form action="post">
+            <label for="user_mail">Your email</label>
+            <input type="email" id="user_mail" placeholder="Enter Email Address">
+            <button type="submit"><img src="./resources/images/icon-arrow.svg"></button>
+          </form>
+        </div>
+        <div class="footer__link-section__box">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#"><img src="./resources/images/icon-map.svg"> 56 Main Street, D-Block, 2nd Floor,</a></li>
+            <li><a href="#"><img src="./resources/images/icon-mail.svg"> support@gmail.com</a></li>
+            <li><a href="#"><img src="./resources/images/icon-telephone.svg"> +012 (345) 67 899</a></li>
+            <li><a href="#"><img src="./resources/images/icon-clock.svg"> 08 am - 06 pm</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+      <img class="particular" src="./resources/images/iconup@2x.png">
+
+      <div class="footer__footer">
+        <p>
+          Copyright © 2021 The Kabibi - Restaurant HTML Template. Designed by <b>Themesflat</b>
+        </p>
+        <ul class="footer__footer__social-media">
+          <li><a href="#"><img src="./resources/images/icon-facebook.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-twitter.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-youtube.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/icon-linkedin.svg"></a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
